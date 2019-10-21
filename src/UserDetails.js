@@ -12,14 +12,15 @@ function UserDetails(props){
             </div>
             <div className="card-body">
                 <div className="left-align">
-                    <p className="Profile-name"> {props.details.website} <br/>
-                        <span className="profile-login">{props.details.name}</span>
+                    <h2>{props.details.name}</h2>
+                    <p className="Profile-name">
+                        <span className="profile-login">{props.details.website}</span>
                     </p>
                     <p className="profile-bio">{props.details.phone}</p>
                 </div>
                 <div className="right-align">
-                    <Link to="/posts" onClick={() => props.getPost(props.details.id)} className="load-comment load-btn">Load Comments</Link>
-                    <Link to="/to-do" className="load-posts load-btn">To-do</Link>
+                    <Link to="/posts" onClick={() => props.getPost(props.details)} className="load-comment load-btn">Load Posts</Link>
+                    <Link to="/userToDos" onClick={() => props.getToDos(props.details)} className="load-posts load-btn">Load To-do</Link>
                 </div>
 
             </div>

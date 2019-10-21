@@ -5,7 +5,7 @@ function AppHeader(){
     return (
         <header className="App-header">
             <h1>
-                React Navigation
+                React Navigation 
             </h1>
             
         </header>

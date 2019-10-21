@@ -14,10 +14,10 @@ function ProfileCard(props){
             </div>
             <div className="card-body">
                 <div className="left-align">
-                    <p className="Profile-name"> {props.profile.email} <br/>
-                        <span className="profile-login"> </span>
+                    <p className="Profile-name"> {props.profile.name} <br/>
+                        <span className="profile-login"> {props.profile.email} </span>
                     </p>
-                    <p className="profile-bio"> </p>
+                    <p className="profile-bio"> {props.profile.website} / {props.profile.phone}  </p>
                 </div>
             </div>
         </div>
